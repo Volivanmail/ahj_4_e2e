@@ -1,4 +1,4 @@
-export function nameCard(e) {
+export function nameCard() {
   const inputForm = document.querySelector(".input");
   const data = inputForm.textContent;
   if (data.length < 13) {
@@ -36,5 +36,4 @@ export function nameCard(e) {
       card.classList.add("valid");
     }
   });
-  e.preventDefault();
 }

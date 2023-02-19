@@ -25,4 +25,4 @@ const clickValid = document.querySelector(".btn");
 clickValid.addEventListener("click", eventValidCart, false);
 
 const inputForm = document.querySelector(".input");
-inputForm.addEventListener("input", nameCard, false);
+inputForm.addEventListener("input", nameCard);
