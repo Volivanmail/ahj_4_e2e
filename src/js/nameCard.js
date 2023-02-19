@@ -1,6 +1,6 @@
 export function nameCard() {
   const inputForm = document.querySelector(".input");
-  const data = inputForm.textContent;
+  const data = inputForm.value;
   if (data.length < 13) {
     let msg = document.querySelector(".messege");
     msg.textContent = "";
