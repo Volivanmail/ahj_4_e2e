@@ -1,8 +1,3 @@
-body {
-    width:960px;
-    margin:0 auto;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -11,4 +6,28 @@ body {
 
 .cards {
     display: flex;
+    flex-wrap: nowrap;
+    padding-inline-start: 0;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+.form-input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.btn {
+    height: 30px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(24, 122, 40);
+    border-color: #131813;
 }

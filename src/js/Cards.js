@@ -13,14 +13,15 @@ export class Cards {
   addCard() {
     const parent = document.querySelector(".cards");
     const newcard = document.createElement("li");
-    const imgInn = document.createElement("img");
+    const image = document.createElement("img");
     newcard.title = this.name;
     newcard.style.listStyleType = "none";
-    newcard.style.width = "30px";
-    newcard.style.height = "20px";
-    imgInn.src = this.img;
-    imgInn.alt = this.name;
+    newcard.style.margin = "5px";
+    image.style.width = "40px";
+    image.style.height = "25px";
+    image.src = this.img;
+    image.alt = this.name;
     parent.appendChild(newcard);
-    newcard.appendChild(imgInn);
+    newcard.appendChild(image);
   }
 }
