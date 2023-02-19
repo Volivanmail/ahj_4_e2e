@@ -1,3 +1,3 @@
 import "./css/style.css";
-// import "./img";
+import "./img/visa.png";
 import "./js/app";
