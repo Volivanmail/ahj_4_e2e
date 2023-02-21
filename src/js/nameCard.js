@@ -5,7 +5,8 @@ export function nameCard() {
     let msg = document.querySelector(".messege");
     msg.textContent = "";
   }
-  let typeCard = null;
+  let typeCard = 0;
+  console.log(typeCard);
   if (data[0] == 4) {
     typeCard = "visa";
   } else if (data.slice(0, 2) == 34) {
@@ -25,7 +26,7 @@ export function nameCard() {
   ) {
     typeCard = "discover";
   } else {
-    typeCard = null;
+    typeCard = 0;
   }
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
@@ -33,6 +34,8 @@ export function nameCard() {
       card.classList.remove("valid");
     }
     if (card.classList.contains(typeCard)) {
+      console.log(typeCard);
+      console.log(card.classList);
       card.classList.add("valid");
     }
   });
